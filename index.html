@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+
+    <script src="https://kit.fontawesome.com/e46c3fe067.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h1><img src="image/aakash-logo-black.png" alt="1"></h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About </a></li>
+            <li><a href="#">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <div class="intro">
+        <h1>I'm <span class="auto-type"></span> </h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <span>Accusantium dolorem nobis voluptatibus ullam
+                !</span></p>
+    </div>
+
+    <div class="info">
+        <ul>
+            <li>
+                <i class="icon1 fa-regular fa-user fa-xl"></i>
+                <h1>Full Name <span id="name">Aakash Singh</span></h1>
+            </li>
+            <li>
+                <i class="icon2 fa fa-envelope fa-xl" aria-hidden="true"></i>
+                <h1>Email <span id="email-icon">aakashtanwar7988@gmail.com</span></h1>
+            </li>
+            <li>
+                <i class="icon3 fa fa-phone fa-xl" aria-hidden="true"></i>
+                <h1>Phone No. <span id="phone">7206236059</span></h1>
+            </li>
+            <li>
+                <i class="icon4 fa fa-github fa-xl" aria-hidden="true"></i>
+                <h1>Github<span id="git">aakash8930</span></h1>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="skills">
+        <h1>MY SKILLS</h1>
+        <ul>
+            <li><span>90%</span> HTML</li>
+            <li><span>60%</span> CSS</li>
+            <li><span>30%</span> JAVASCRIPT</li>
+            <li><span>10%</span> PHP</li>
+            <li><span>10%</span> MYSQL</li>
+        </ul>
+    </div>
+
+    <div class="works">
+        <h1>MY WORKS</h1>
+        <div class="work-stack">
+            <div class="work">
+                <img src="image/college-web.png" alt="1" width="90%">
+                <h1><a href="https://college-assignment-git-main-aakash8930.vercel.app/">College Assignment :</a></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat odio quod ad maxime iusto est,
+                    culpa alias aut quasi vitae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat odio
+                    quod ad maxime iusto est, culpa alias aut quasi vitae.</p>
+            </div>
+            <div class="work">
+                <img src="image/Financial-web.png" alt="1" width="90%">
+                <h1><a href="https://assignment-blue-one.vercel.app/">Financial Website :</a></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat odio quod ad maxime iusto est,
+                    culpa alias aut quasi vitae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat odio
+                    quod ad maxime iusto est, culpa alias aut quasi vitae.</p>
+            </div>
+            <div class="work">
+                <img src="image/bgmi-team.png" alt="1" width="90%">
+                <h1><a href="https://bgmi-team-eight.vercel.app/">Team Representaion:</a></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat odio quod ad maxime iusto est,
+                    culpa alias aut quasi vitae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat odio
+                    quod ad maxime iusto est, culpa alias aut quasi vitae.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="form">
+        <h1>Get In Touch</h1>
+        <form action="#">
+            <input type="text" name="firstname" id="firstname" placeholder="First name" required />
+            <input type="text" name="surname" id="surname" placeholder="Surname" required />
+
+            <input type="text" name="email" id="email" placeholder="E-mail address" required />
+
+            <textarea name="message" id="message" placeholder="Message"></textarea>
+
+            <input type="submit" id="submit-btn" value="Send" />
+        </form>
+    </div>
+
+    <div class="footer">
+        <img src="image/aakash-logo-black.png" alt="">
+
+        <div class="tabs">
+            <ul>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="tabs2">
+            <ul>
+                <li><a href="#">Price</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Blogs</a></li>
+            </ul>
+        </div>
+
+        <div class="tabs3">
+            <div class="contact">
+                <h3>Phone No. - 7206236059</h3>
+                <h3>Email - aakashtanwar8930@gmail.com</h3>
+            </div>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Pinterest</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        // animated text 
+        var typed = new Typed(".auto-type", {
+            strings: ["Aakash Singh", "a Web Developer",],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        })
+    </script>
+
+</body>
+
+</html>

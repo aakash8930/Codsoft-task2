@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Playwrite+US+Trad:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background: url(image/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 0px;
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+.navbar h1 img {
+    width: 130px;
+    margin-left: 90px;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 680px;
+    width: 420px;
+}
+
+.navbar ul li {
+    list-style: none;
+    padding: 10px 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 19px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.navbar ul li a::before,
+.navbar ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #8affff;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+.navbar ul li a::before {
+    top: -5px;
+    transform-origin: left;
+}
+
+.navbar ul li a::after {
+    bottom: -5px;
+    transform-origin: right;
+}
+
+.navbar ul li a:hover::before,
+.navbar ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    backdrop-filter: blur(10px);
+
+}
+
+.intro h1 {
+    font-size: 50px;
+    background: -webkit-linear-gradient(144deg, #a7ddfc 70%, #9990ff 85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Sansita", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 3px;
+}
+
+.auto-type {
+    margin-left: 10px;
+    font-size: 50px;
+    background: -webkit-linear-gradient(144deg, #8F8FFF, #FF8ADC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.intro p {
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: "Baskervville SC", serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+.intro p span {
+    margin-left: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.info ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.icon1 {
+    margin: 20px 0 20px 40px;
+}
+
+.icon2 {
+    margin: 20px 0 20px 125px;
+}
+
+.icon3 {
+    margin: 20px 0 20px 30px;
+}
+
+.icon4 {
+    margin: 20px 0 20px 25px;
+}
+
+.info ul li h1 {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Sansita", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 3px;
+}
+
+.info ul li h1 span {
+    font-size: 15px;
+}
+
+#name {
+    margin-left: -5px;
+}
+
+#email-icon {
+    margin-left: -1px;
+}
+
+#phone {
+    margin-left: 0px;
+}
+
+#git {
+    margin-left: 5px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.skills ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.skills ul li {
+    list-style: none;
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.work-stack {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px 0;
+    margin: 0 0 0 80px;
+}
+
+.work h1 {
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: "Sansita", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 3px;
+}
+
+.work h1 a {
+    text-decoration: none;
+}
+
+.work p {
+    width: 400px;
+    margin-top: 10px;
+    line-height: 20px;
+    font-family: "Baskervville SC", serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Playwrite PE", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+form {
+    width: 565px;
+    margin-left: 65px;
+    margin-top: 70px;
+    height: 400px;
+}
+
+input,
+textarea,
+select,
+option {
+    padding: 10px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #FFF;
+    color: #FFF;
+    font-family: "Playwrite PE", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    outline: none;
+}
+
+input#firstname {
+    width: 50%;
+    max-width: 260px;
+
+    margin-right: 20px;
+}
+
+input#surname {
+    width: 50%;
+    max-width: 260px;
+
+    margin-left: 20px;
+}
+
+input#email {
+    width: 100%;
+    margin-top: 20px;
+}
+
+textarea#message {
+    width: 100%;
+    margin-top: 20px;
+}
+
+input#submit-btn {
+    margin-top: 20px;
+    width: 100px;
+    border: 2px solid #FFF !important;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: 0.25s ease-in-out 0s;
+    font-family: "Pacifico", cursive;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+input#submit-btn:hover {
+    cursor: pointer;
+    background: #FFF;
+    color: #000;
+    transform: scale(1.25);
+}
+
+
+
+::-webkit-input-placeholder {
+    color: #FFF;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: #FFF;
+    opacity: 1;
+}
+
+
+
+:-ms-input-placeholder {
+    color: #FFF;
+    opacity: 1;
+}
+
+
+
+input:-moz-placeholder {
+    color: #FFF;
+    opacity: 1;
+}
+
+.footer {
+    background: #000000d1;
+    width: 100%;
+    height: 300px;
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.footer img {
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 150px;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 90px;
+    right: 200px;
+    cursor: pointer;
+}
+
+.tabs ul li {
+    list-style: none;
+    padding: 15px;
+}
+
+.tabs ul li a {
+    text-decoration: none;
+}
+
+.tabs2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 250px;
+
+}
+
+.tabs2 ul li {
+    list-style: none;
+    padding: 15px;
+}
+
+.tabs2 ul li a {
+    text-decoration: none;
+}
+
+.tabs3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 395px;
+    left: 755px;
+    width: 500px;
+
+}
+
+.contact h3 {
+    margin-bottom: 25px;
+}
+
+.tabs3 ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: -70px;
+    margin-top: -10px;
+}
+
+.tabs3 ul li {
+    list-style: none;
+    padding: 15px;
+}
+
+.tabs3 ul li a {
+    text-decoration: none;
+}
